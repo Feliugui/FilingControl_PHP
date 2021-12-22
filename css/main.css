@@ -1,0 +1,182 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+html, 
+body {
+    margin-top: 1.5em;
+    width: 100%;
+    background: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagewrapper{
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    padding: 1rem;
+    height: 90%;
+    width: 80%;
+}
+
+#pagewrapper > *{
+    margin: 0.5em;
+}
+
+form > * {
+    padding: 0.5em;
+}
+
+#pagewrapper > h1{
+    text-transform: uppercase;
+}
+
+#pagewrapper > h2{
+    margin-bottom: 1em;
+}
+
+/* Per missatge error de login */
+#pagewrapper > .error{
+    color: red;
+}
+
+#pagewrapper > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+/* Registres de fitxades d'entrada */
+.entrada{
+    background-color: seagreen;
+    border-radius: 4px;
+    color: white;
+    padding: 0.25em;
+}
+
+/* Registres de fitxades de sortida */
+.sortida{
+    background-color: tomato;
+    border-radius: 4px;
+    color: white;
+    padding: 0.25em;
+}
+
+/* Registres de fitxades errònies */
+.erroni{
+    background-color: purple;
+    border-radius: 4px;
+    color: white;
+    padding: 0.25em;
+}
+
+label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input{
+    text-align: center;
+    display: block;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 60%;
+    outline: none;
+    background: none;
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+
+.button.logout{
+    padding: 1em;
+}
+
+/* Botó per Fitxar Entrada */
+.button.entrada{
+    width: 50%;
+    padding: 1em;
+    background-color: darkgreen;
+}
+
+/* Botó per Fitxar Sortida */
+.button.sortida{
+    width: 50%;
+    padding: 1em;
+    background-color: darkred;
+}
+
+a, a:visited{
+    display: inline-block;
+    width: 75%;
+    text-decoration: none;
+    color: white;
+}
+
+.button {
+    margin-top: 1em;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    width: 60%;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+table{
+    width:100%;
+    border: 4px solid darkgrey;
+    padding:0;
+    margin:0;
+    border-spacing: 0;
+}
+
+table .entrada, table .sortida, table .erroni{
+    border-radius: 0;
+    border: 1px solid darkslategray;
+}
+
+th{
+    background-color: grey;
+    font-size: larger;
+    color: white;
+    padding: 0.25em;
+}
